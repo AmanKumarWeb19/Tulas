@@ -1,5 +1,5 @@
 ## Tula's Website
-This repository contains the code for the Tula's website, which showcases the Tula's International School located in Uttarakhand, India.
+Tula's website serves as an online platform to provide detailed information about Tula's International School. It encompasses various features, including details about extracurricular activities, awards, rankings, and ways to become a part of the school community.
 
 ## Table of Contents
 - Description
