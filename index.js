@@ -26,3 +26,5 @@ arrow.addEventListener("mouseover", () => {
 arrow.addEventListener("mouseout", () => {
   arrow.style.transform = "translateX(-50%)"; // Return to centered position
 });
+
+
