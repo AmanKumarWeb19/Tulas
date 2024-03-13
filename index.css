@@ -8,36 +8,58 @@ body {
   background-color: rgb(185, 1, 36);
   border: 1px solid black;
 }
+
 .navbar-container {
-  width: 70%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  margin: auto;
+  justify-content: space-evenly; /* Changed to center */
+  align-items: center;
   list-style-type: none;
   font-weight: bold;
   color: white;
   font-size: 22px;
-  margin-top: 25px;
+  margin: 0 auto; /* Changed margin */
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* Added to center horizontally */
+  z-index: 1000;
+  background-color: rgb(185, 1, 35);
+  animation: swim 1s ease-in-out forwards;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .navbar-container li {
   cursor: pointer;
-  position: relative;
+  margin: 0 5px; /* Adjusted margin */
+  padding: 5px 8px;
 }
 
 .navbar-container li:hover {
-  color: #ffd700; /* Change color on hover */
-  animation: textGlow 0.5s ease-in-out infinite alternate;
+  animation: dance 0.5s ease-in-out infinite alternate;
 }
 
-@keyframes textGlow {
+@keyframes dance {
   0% {
-    transform: scale(1);
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-5px) translateX(2px);
   }
   100% {
-    transform: scale(1.1);
+    transform: translateY(0) translateX(0);
   }
 }
+
 .navbar-image-container {
   /* border: 1px solid black; */
   width: 100%;
