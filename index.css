@@ -322,7 +322,13 @@ body {
   /* border: 5px solid black; */
   margin-top: 150px;
 }
-
+.tour360 {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 .fromparent {
   margin-top: 50px;
   /* border: 1px solid black; */
@@ -445,10 +451,101 @@ body {
   height: 248px;
   width: 248px;
   background-color: #b90124;
+  color: white;
 }
 .rank3Box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 3.5rem;
+}
+
+.rank1Box {
+  position: relative;
+  margin: 0 auto;
+  transition: transform 0.5s;
+}
+
+.rank1Box:hover {
+  transform: rotate(360deg);
+}
+
+/* Styles for the text inside the .rankings div */
+.rank1Box .rankings div {
+  text-align: center;
+  font-family: TT Chocolates, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #000;
+}
+
+.rank1Box .rankings h3 {
+  color: #b90124;
+  text-align: center;
+  font-family: Mirador, sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 900;
+  margin: 0;
+}
+
+.rank3Box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.chlidRank {
+  background-color: #b90124;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.chlidRank:hover {
+  animation: hoverAnimation 0.5s infinite alternate, rotateAnimation 1s infinite;
+}
+
+@keyframes hoverAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* h1,
+h2,
+p {
+  margin: 0;
+  font-weight: 400;
+  color: white;
+} */
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+p {
+  font-size: 15px;
+  text-align: center;
 }
