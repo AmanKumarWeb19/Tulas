@@ -30,7 +30,7 @@ git clone (https://github.com/AmanKumarWeb19/Tulas.git)
 3. Enjoy an immersive experience by interacting with dynamic content, including videos and interactive elements.
 
 ## Deployment
-The Tula's website is deployed on Netlify. You can access the deployed version here.
+The Tula's website is deployed on Netlify. You can access the deployed version here :- https://gleeful-pavlova-58c094.netlify.app/
 
 ## Credits
 - Images: Various images used in the website are included in the images directory.
